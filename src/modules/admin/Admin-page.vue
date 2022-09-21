@@ -11,6 +11,7 @@
         <label for="title">Price</label>
         <input type="text" id="price" v-model="products.price" />
         <button @click="addProducts()">Add product</button>
+        <h1>Hello</h1>
       </div>
     </div>
   </div>
