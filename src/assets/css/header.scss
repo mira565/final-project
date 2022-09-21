@@ -1,0 +1,40 @@
+@import 'vars.scss';
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+   
+    &__icons {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }   
+}
+  }
+
+.nav{
+  &-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 40px;
+   
+      &__title {
+
+      color: red;
+      }
+    }
+  }
+      
+    
+    
+
+

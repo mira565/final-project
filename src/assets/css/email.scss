@@ -1,0 +1,54 @@
+@import 'vars.scss';
+
+.box {
+    background-image: url(../../assets/images/image/emailbacground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 444px;
+     margin-top: 60px;
+     &-email {
+        padding: 97px 473px 86px;
+        &__title {
+            font-size: 32px;
+            line-height: 1.4;
+            text-align: center;
+            color: #ffff;
+            margin-bottom: 12px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: center;
+            color:#ffff;
+            margin-bottom: 30px;
+        }
+        &__options {
+            margin-bottom: 40px;
+            display: flex;
+            gap: 10px;
+        }
+         &__input  {
+            width: 354px;
+            height: 56px;
+            background-color: #F9F9F9;
+            border: none;
+            Fill: Light Grey;
+            color:$darkprimary;
+            font-size: 16px;
+            padding: 17px 32px;
+        }
+        &__option {
+            display: flex;
+            gap: 9px;
+            &-text {
+                font-size: 16px;
+                line-height: 1.5;
+                color:white;
+                text-align: center;
+            }
+        }
+    }
+    
+    
+}
+

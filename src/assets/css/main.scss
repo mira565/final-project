@@ -1,0 +1,114 @@
+@import 'vars.scss';
+
+
+.hero {
+    
+    background-image: url(../../assets/images/image/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     min-height: 100vh;
+     height: 704px;
+
+    &-container {
+        position: relative;
+        width: 1440px;
+        height: 789px;
+    
+    }
+    &-info {
+        background-color:#ffff;
+        width: 630px;
+        height: 444px;
+        padding: 56px 48px 61px 46px;
+        position: absolute;
+        left: 1200px;
+        top: 300px;
+        
+ 
+    &__heading {
+        color: $black;
+        font-size: 32px;
+        line-height: 1.4;
+        padding-bottom: 20px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 1.5;
+        color: $darkgrey;
+        padding-bottom: 157px;
+    }
+    &__btn {
+        background-color: $lightgrey;
+        width: 170px;
+        height: 56px;
+    }
+}
+}
+
+.brand {
+    align-items: center;
+    &-title {
+        text-align: center;
+        padding-bottom: 36px;
+        margin-top: 50px;
+    }
+    
+
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 80px;
+        gap: 12px;
+        margin-bottom: 82px;
+
+    }
+    &-descr {
+        margin-bottom: 10px;
+        &__item {
+            background-color: $lightgrey;
+            width: 305px;
+            padding: 48px 48px;
+        
+            &-icon {
+                margin-bottom: 12px;
+            }
+            &-heading {
+                margin-bottom: 12px;
+            }
+        }
+
+    }
+}
+
+.box {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    // justify-content: space-between;
+    &-first {
+        width: 634px;
+        height: 478px;
+        background-color: $darkprimary;
+        padding: 64px 91px 315px 64px;
+        
+        &__title {
+            font-size: 32px;
+            line-height: 39px;
+            color:#ffff;
+            margin-bottom: 12px;
+        }
+        &__text {
+            font-size: 18px;
+            line-height: 24px;
+            color:#ffff;
+            margin-bottom: 205px;
+        }
+        
+    }
+    &__btn {
+        width: 170px;
+        height: 56px;
+        background-color: rgba(249, 249, 249, 0.15);
+    }
+}
