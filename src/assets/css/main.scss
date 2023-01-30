@@ -110,5 +110,10 @@
         width: 170px;
         height: 56px;
         background-color: rgba(249, 249, 249, 0.15);
+        &:hover {
+            cursor: pointer;
+            background-color: darkslateblue;
+            color: white;
+          }
     }
 }

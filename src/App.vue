@@ -54,7 +54,7 @@ button {
   border: 0;
   font-family: $CDFont;
   padding: 16px 32px;
-  :hover {
+  &:hover {
     cursor: pointer;
     background-color: darkslateblue;
     color: white;
