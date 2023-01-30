@@ -16,7 +16,17 @@ const store = new Vuex.Store({
     SET_BASKET(state, basket) {
       state.basket = basket;
     },
+    // REMOVE_FROM_CART(state, index) {
+    //   state.cart.splice(index, 1);
+    // },
+    // PLUS(state, index) {
+    //   state.basketProduct[index].quantity++;
+    // },
+    // MINUS(state, index) {
+    //     state.basketProduct[index].quantity--;
+    // },
   },
+
   actions: {
     getProducts({ commit }, payload) {
       fetch(`http://localhost:3000/products?limit=${payload}`)

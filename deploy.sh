@@ -12,3 +12,4 @@ git commit -m 'New Deployment'
 git push -f git@github.com:mira565/mira-project.git master:gh-pages
 
 cd-
+

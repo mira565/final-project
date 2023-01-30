@@ -6,6 +6,7 @@
           v-for="(basketProduct, index) in getBasket"
           class="products basket-item"
           :key="index"
+          @deleteFromCart="deleteFromCart(index)"
         >
           <img class="basket-item__img" :src="basketProduct.img" alt="" />
           <div class="basket-item__descr">
@@ -15,14 +16,18 @@
           </div>
           <div class="basket-items__quantity">
             <p class="basket-item__quantity">Quantity</p>
-            {{ getBasket.quantity }}
+            {{ basketProduct.quantity }}
           </div>
           <div class="basket-items__quantity">
-            <p class="basket-item__quantity">Total</p>
-            {{ getBasket.quantity }}
+            <span>
+              <!-- <span @click="minusItem">-</span> -->
+              <p>{{ getBasket.quantity }}</p>
+              <!-- <span @click="minusItem">+</span> -->
+            </span>
           </div>
         </div>
-        <div class="basket-item__total">Total</div>
+        <h3 class="basket-item__total">Total</h3>
+        <p class="basket-item__sum">{{ cartTotalCost }}</p>
       </div>
     </div>
   </div>
@@ -34,6 +39,20 @@ export default {
     getBasket() {
       return this.$store.getters.getBasket;
     },
+    cartTotalCost() {
+      let result = [];
+
+      for (let basketProduct of this.getBasket) {
+        result.push(basketProduct.quantity * basketProduct.price);
+      }
+      result = result.reduce(function (sum, el) {
+        return sum + el;
+      });
+      return result;
+    },
+  },
+  mounted() {
+    this.$set(this.products, "quantity", 1);
   },
 };
 </script>
